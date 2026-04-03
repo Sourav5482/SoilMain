@@ -38,7 +38,7 @@ const SoilSchema = new mongoose.Schema(
   {
     refId: { type: String, required: true, index: true, unique: true },
     location: { type: String, default: "" },
-    soilType: { type: String, enum: ["Clay", "Sandy", "Loamy"], default: "Loamy" },
+    soilType: { type: String, enum: ["Clay", "Sandy", "Loamy", "Silty"], default: "Loamy" },
     records: [RecordSchema]
   },
   { timestamps: true }
