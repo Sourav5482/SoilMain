@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Soil Monitoring",
+    "slug": "soil-monitoring-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#f6f4ed"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.soilmonitoring.mobile",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.soilmonitoring.mobile",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "App connects to ESP32 to read sensor data",
+        "NSLocationWhenInUseUsageDescription": "Location is captured with soil records"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e82495d6-9a5f-4d8d-9cbb-36791bce188a"
+      }
+    },
+    "owner": "sourav7863"
+  }
+}
